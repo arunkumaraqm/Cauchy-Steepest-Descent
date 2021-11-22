@@ -1,0 +1,18 @@
+3
+x+y^3+8*z^2+x*y
+2
+0
+0
+0
+
+Enter the number of variables in the equation: 3
+Enter the expression: x+y^3+8*z^2+x*y
+Interpreting as x*y + x + y**3 + 8*z**2
+Answer precision? 2
+Enter initial x coordinates: 0
+Enter initial y coordinates: 0
+Enter initial z coordinates: 0
+Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    xi = round(xi + (alpha[0]*s[0]),decimals) #Calculating the new x-coords
+IndexError: list index out of range

@@ -12,9 +12,10 @@ decimals = 5 #Set the precision of your output here
 variable = int(input("Enter the number of variables in the equation: "))
 equa = input("Enter the expression: ") 
 equation = sympify(equa) #Converting the input string to a mathematical expression
-precision = int(input("Answer precision ? "))
-decimals = precision
-if(variable == 2):
+print("Interpreting as", equation)
+decimals = int(input("Answer precision? "))
+
+if variable == 2:
     xi = float(input("Enter initial x coordinates: "))
     yi = float(input("Enter initial y coordinates: "))
     while(True):
@@ -42,10 +43,10 @@ if(variable == 2):
                     a is : {2}
 
          """.format(xi,yi,round(alpha[0],decimals),n,grad))
-         if((result[0]==0) and (result[1]==0)):
+         if((result[0] == 0) and (result[1] == 0)):
             #print("Exit by 1") #To let the user know which condition caused it to stop
             break
-         elif((x_previous==xi) and (y_previous==yi)):
+         elif((x_previous == xi) and (y_previous == yi)):
             #print("Exit by 2") 
             break    
          # elif(n>19): #Incase you want to set a limit to the number of iterations
@@ -54,7 +55,8 @@ if(variable == 2):
          result.clear()
          s.clear()
          temp.clear()   
-elif(variable == 3):
+
+elif variable == 3:
     xi = float(input("Enter initial x coordinates: "))
     yi = float(input("Enter initial y coordinates: "))
     zi = float(input("Enter initial z coordinates: "))
@@ -91,10 +93,10 @@ elif(variable == 3):
                     a is : {3}
 
          """.format(xi,yi,zi,round(alpha[0],decimals),n,grad))
-         if(((result[0]==0) and (result[1]==0)) and (result[2]==0)):
+         if(((result[0] == 0) and (result[1] == 0)) and (result[2] == 0)):
             print("Exit by 1") #To let the user know which condition caused it to stop
             break
-         elif(((x_previous==xi) and (y_previous==yi)) and (z_previous==zi)):
+         elif(((x_previous == xi) and (y_previous == yi)) and (z_previous == zi)):
             print("Exit by 2") 
             break    
          # elif(n>19): #Incase you want to set a limit to the number of iterations
@@ -102,5 +104,4 @@ elif(variable == 3):
          grad.clear()   #Clearing all the lists
          result.clear()
          s.clear()
-         temp.clear()              
-
+         temp.clear()

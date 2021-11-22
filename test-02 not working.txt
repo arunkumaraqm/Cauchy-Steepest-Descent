@@ -1,0 +1,53 @@
+3
+x+y^3+8*z^2+x*y
+3
+-8
+0
+1
+
+Enter the number of variables in the equation: 3
+Enter the expression: x+y^3+8*z^2+x*y
+Interpreting as x*y + x + y**3 + 8*z**2
+Answer precision ? 3
+Enter initial x coordinates: -8
+Enter initial y coordinates: 0
+Enter initial z coordinates: 1
+[-20.862, 1428.6, 715.58]
+
+                Iteration no. 1
+                    gradient : [1.00000000000000, -8.00000000000000, 16.0000000000000]
+                    x is : -5.267
+                    y is : -21.862
+                    z is : 44.724
+                    a is : -2.733
+
+         
+[0.336 + 12.101*I, -5.577 + 3*(-0.664 + 12.101*I)**2 - 0.177*I, 885.47 + 96.98*I]
+
+                Iteration no. 2
+                    gradient : [-20.862, 1428.6, 715.58]
+                    x is : -5.577 - 0.177*I
+                    y is : -0.664 + 12.101*I
+                    z is : 55.342 + 6.061*I
+                    a is : -0.015 - 0.008*I
+
+         
+Traceback (most recent call last):
+  File "/home/aqm/software/minconda3/lib/python3.8/site-packages/sympy/core/numbers.py", line 2103, in __new__
+    ival = int(i)
+  File "/home/aqm/software/minconda3/lib/python3.8/site-packages/sympy/core/expr.py", line 331, in __int__
+    raise TypeError("can't convert complex to int")
+TypeError: can't convert complex to int
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 79, in <module>
+    alpha = list(solveset(tempEq,a)) #Solving for alpha 
+  File "/home/aqm/software/minconda3/lib/python3.8/site-packages/sympy/core/expr.py", line 3866, in round
+    xi = Integer(xf)
+  File "/home/aqm/software/minconda3/lib/python3.8/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/home/aqm/software/minconda3/lib/python3.8/site-packages/sympy/core/numbers.py", line 2105, in __new__
+    raise TypeError(
+TypeError: Argument of Integer should be of numeric type, got -592685305476553.0 + 88151865923466.89*I.
