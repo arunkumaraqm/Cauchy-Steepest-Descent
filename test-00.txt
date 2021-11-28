@@ -1,0 +1,19 @@
+(x^2 + y - 11)^2 + (x + y^2 - 7)^2
+5 6
+# converges to (3, 2)
+
+(x^2 + y - 11)^2 + (x + y^2 - 7)^2
+-5 -4
+# converges to (-3.77, -3.28)
+
+(x^2 + y - 11)^2 + (x + y^2 - 7)^2
+5 -2
+# converges to (3.58, -1.85)
+
+(x^2 + y - 11)^2 + (x + y^2 - 7)^2
+-4 7
+# doesn't converge in 21 iterations
+
+(x^2 + y - 11)^2 + (x + y^2 - 7)^2
+-3 4
+# converges to (-2.80, 3.13)

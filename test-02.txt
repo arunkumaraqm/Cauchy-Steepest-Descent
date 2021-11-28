@@ -1,0 +1,53 @@
+2
+x-y+2*x^2+2*x*y+y^2
+4
+0
+0
+
+Output:
+                Iteration no. 1
+                    gradient : [1, -1]
+                    x is : -1.00000000000000
+                    y is : 1.00000000000000
+                    a is : 1
+
+         
+
+                Iteration no. 2
+                    gradient : [-1.00000000000000, -1.00000000000000]
+                    x is : -0.8000
+                    y is : 1.2000
+                    a is : 0.2000
+
+         
+
+                Iteration no. 3
+                    gradient : [0.19999, -0.20000]
+                    x is : -1.0000
+                    y is : 1.4000
+                    a is : 0.99990
+
+         
+
+                Iteration no. 4
+                    gradient : [-0.20000, -0.20000]
+                    x is : -0.9600
+                    y is : 1.4400
+                    a is : 0.2000
+
+         
+
+                Iteration no. 5
+                    gradient : [0.040005, -0.039997]
+                    x is : -1.0000
+                    y is : 1.4800
+                    a is : 0.9997
+
+         
+
+                Iteration no. 6
+                    gradient : [-0.040001, -0.040001]
+                    x is : -0.9920
+                    y is : 1.4880
+                    a is : 0.2000
+
